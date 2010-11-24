@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Riak Admin</title>
+        <link href="favicon.ico" rel="shortcut icon"> 
+        <link type="text/css" rel="stylesheet" media="screen" href="fluid.gs.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="main.css">
+        <script type="text/javascript" src="jquery-1.4.3.min.js"></script>
+        <script type="text/javascript" src="json2.js"></script>
+        <script type="text/javascript" src="riak.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Overview</a>
+        </header>
+        <div class="nine_column section">
+            <div id="content" class="eight column">
+                <div id="wrapper">
+                    <nav id="top-nav">
+                        <form id="add-bucket">
+                            <span>Bucket Name:</span>
+                            <input class="bucket-name" type="text" name="name">
+                            <button type="submit" class="add">Add Bucket</button>
+                        </form>
+                    </nav>
+                    <table id="bucket-table">
+                        <caption>Buckets</caption>
+                        <thead>
+                            <tr>
+                                <th>Bucket Name</th>
+                                <th>Number of Documents</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="server-info" class="two column">
+                <h2>Server Summary</h2>
+                <table id="server-summary" class="stats">
+                    <tbody></tbody>
+                </table>
+                
+                <h4>Node statistics</h4>
+                <table id="node-info" class="stats">
+                    <tbody></tbody>
+                </table>
+
+                <h4>Virtual node statistics</h4>
+                <table id="vnode-info" class="stats">
+                    <tbody></tbody>
+                </table>
+
+                <h3>CPU Statistics</h3>
+                <div class="expandable">
+                    <table id="cpu-info" class="stats">
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <h3>FSM (Finite State Machine)</h3>
+                <div class="expandable">
+                    <h4>FSM Get Statistics</h4>
+                    <table id="fsm-get-info" class="stats">
+                        <tbody></tbody>
+                    </table>
+            
+                    <h4>FSM Put Statistics</h4>
+                    <table id="fsm-put-info" class="stats">
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <h3>Ring Information</h3>
+                <div class="expandable">
+                    <table id="ring-info" class="stats">
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <h3>System information</h3>
+                <div class="expandable">
+                    <table id="sys-info" class="stats">
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <h3>Library Versions</h3>
+                <div class="expandable">
+                    <table id="software-info" class="stats">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

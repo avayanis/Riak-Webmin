@@ -1,0 +1,336 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.breadcrumb {
+    background: transparent url(right-icon.png) no-repeat scroll 0px 9px;
+    padding: 8px 12px 8px 24px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: 1px solid #999;
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px 8px 2px 30px;
+}
+
+button:hover {
+    color: #000;
+}
+
+button.add {
+    background: white url(plus-icon.png) no-repeat scroll 8px 4px;
+}
+
+button.remove {
+    background: white url(delete-icon.png) no-repeat scroll 8px 4px;
+    white-space: nowrap;
+}
+
+button.ok {
+    background: white url(tick-icon.png) no-repeat scroll 8px 4px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+header {
+    background: #333;
+    border-bottom: 1px solid #111;
+    line-height: 32px;
+    height: 32px;
+    color: #fff;
+}
+
+header a {
+    font-size: 16px;
+    color: #bbb;
+    padding: 0 8px;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+}
+
+nav form * {
+    font-size: 16px;
+}
+
+nav#top-nav {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+}
+
+nav #jump {
+    float: right;
+}
+
+table a {
+    color: #006D92;
+}
+
+table a:hover {
+    color: #F68C11;
+}
+
+#content {
+    vertical-align: top;
+}
+
+#content #wrapper {
+    margin: 16px 32px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+#content table {
+    width: 100%;
+    border: 1px solid #a7a7a7;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+#content table caption {
+    padding: 8px 0;
+    text-align: left;
+    font-size: 16px;
+    text-shadow: #999 2px 1px 2px;
+}
+
+#content table th {
+    border-bottom: 1px solid #a7a7a7;
+    border-right: 1px solid #a7a7a7;
+    padding: 6px;
+    text-shadow: #999 2px 1px 2px;
+    white-space: nowrap;
+    background: #e9e9e9;
+    color: #333;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+#content table tbody th, #content table tbody td {
+    border-right: 1px solid #a7a7a7;
+    padding: 4px 8px;
+}
+
+#document {
+    color: #424242;
+}
+
+#document h2 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+#document h2 b {
+    color: #F68C11;
+    font-weight: normal;
+    padding-left: 8px;
+}
+
+#document input:not([type="image"]) {
+   width: 80%; 
+}
+
+#document span.notice {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+
+#overlay {
+    background: #666;
+    opacity: 0.3;
+    position: fixed;
+    z-index: 900;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#popup {
+    position: fixed;
+    z-index: 1000;
+    top: 50px;
+    left: 15%;
+    width: 70%;
+    background: #fff;
+}
+
+#popup input:not([type="image"]), #popup textarea {
+    width: 80%;
+}
+
+#popup .close {
+    background-image: url(fancybox.png);
+    background-position: -40px 0px;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 30px;
+    z-index: 1103;
+}
+
+#popup .outer {
+}
+
+#popup .outer .bg {
+    border: 0px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 20px;
+    z-index: 1001;
+}
+
+#popup .outer .bg-n {
+    background-image: url(fancybox-x.png);
+    left: 0px;
+    top: -20px;
+    width: 100%;
+}
+
+#popup .outer .bg-ne {
+    background-image: url(fancybox.png);
+    background-position: -40px -162px;
+    right: -20px;
+    top: -20px;
+}
+
+#popup .outer .bg-e {
+    background-image: url(fancybox-y.png);
+    background-position: -20px 0px;
+    height: 100%;
+    right: -20px;
+    top: 0px;
+}
+
+#popup .outer .bg-se {
+    background-image: url(fancybox.png);
+    background-position: -40px -182px;
+    bottom: -20px;
+    right: -20px;
+}
+
+#popup .outer .bg-s {
+    background-image: url(fancybox-x.png);
+    background-position: 0px -20px;
+    bottom: -20px;
+    left: 0px;
+    width: 100%;
+}
+
+#popup .outer .bg-sw {
+    background-image: url(fancybox.png);
+    background-position: -40px -142px;
+    bottom: -20px;
+    left: -20px;
+}
+
+#popup .outer .bg-w {
+    background-image: url(fancybox-y.png);
+    height: 100%;
+    left: -20px;
+    top: 0px;
+}
+
+#popup .outer .bg-nw {
+    background-image: url(fancybox.png);
+    background-position: -40px -122px;
+    left: -20px;
+    top: -20px;
+}
+
+#popup .inner {
+    background: #fff;
+    position: relative;
+    margin: 16px;
+    overflow-y: scroll;
+}
+
+#server-info {
+    padding: 0 10px;
+}
+
+#server-info h2 {
+    font-size: 24px;
+    color: #424242;
+    padding: 16px 0 8px;
+}
+
+#server-info h3 {
+    font-size: 20px;
+    color: #F68C11;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+#server-info h4 {
+    font-size: 16px;
+    color: #98BF21;
+    padding: 4px 0;
+}
+
+#server-info div.expandable {
+    display: none;
+}
+
+#server-info table {
+    border-spacing: 0;
+}
+
+#server-info tbody th {
+    text-align: left;
+    font-weight: normal;
+}
+
+#server-info tbody td {
+    text-align: right;
+}
+
+.document-form {
+    color: #424242;
+}
+
+.document-form h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.document-form h3 {
+    font-size: 20px;
+    margin: 4px 0;
+}
+
+.document-form div.wrapper {
+    padding: 16px 16px 16px 0;
+}
+
+.document-form .notice {
+    margin: 8px 0;
+    display: block;
+}
+
+.notice {
+   color: #d1081c;
+   font-weight: bold;
+}
