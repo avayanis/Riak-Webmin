@@ -636,7 +636,7 @@ controller = {
                     "bucket" : this.query.name 
                 });
                 $('header').breadcrumb(this.handler, this.query);
-                $('h1 span').text(this.query.name);
+                $('h2 span').text(this.query.name);
                 $('body').popup();
                 $('nav#top-nav').find('button').addDocumentButton(this.query.name);
                 $('#document-table').documentTable(this.query.name, path);

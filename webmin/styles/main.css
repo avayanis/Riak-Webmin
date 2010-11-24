@@ -14,6 +14,7 @@ a.breadcrumb {
 body {
     padding: 0;
     margin: 0;
+    color: #424242;
 }
 
 button {
@@ -41,8 +42,20 @@ button.ok {
     background: white url(tick-icon.png) no-repeat scroll 8px 4px;
 }
 
+footer a {
+    color: #006D92;
+    font-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+}
+
 h1 {
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px 0;
+    color: #F68C11;
 }
 
 header {
@@ -51,6 +64,7 @@ header {
     line-height: 32px;
     height: 32px;
     color: #fff;
+    display: block;
 }
 
 header a {
@@ -62,6 +76,10 @@ header a {
 input {
     border: 1px solid #ccc;
     padding: 2px 4px;
+}
+
+nav {
+    display: block;
 }
 
 nav form * {
@@ -126,6 +144,12 @@ table a:hover {
 #content table tbody th, #content table tbody td {
     border-right: 1px solid #a7a7a7;
     padding: 4px 8px;
+}
+
+#content h2 {
+    font-size: 24px;
+    padding: 8px 0px;
+    text-align: left;
 }
 
 #document {
@@ -274,7 +298,7 @@ table a:hover {
 #server-info h2 {
     font-size: 24px;
     color: #424242;
-    padding: 16px 0 8px;
+    padding: 8px 0;
 }
 
 #server-info h3 {
