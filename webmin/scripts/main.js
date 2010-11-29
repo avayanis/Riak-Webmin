@@ -368,7 +368,7 @@ $.fn.riakHandlers = function(params) {
                     $form.trigger('save-error', ["Document already exists!"]);
                     break;
                 case 'failed':
-                    object = new RiakObject(bucketName, inputs.key, client, JSON.stringify(body), inputs.mime);
+                    object = new RiakObject(bucketName, inputs.key, client, body, inputs.mime);
                     object.store(function(status, object) {
                         switch (status) {
                             case 'ok':
@@ -394,7 +394,7 @@ $.fn.riakHandlers = function(params) {
         var $form = $(e.target),
             inputs  = getFormInput($form);
 
-        doc.body = JSON.stringify(body);
+        doc.body = body;
         
         if (doc.vlock != inputs.vclock)
             doc.vlock = inputs.vclock;
