@@ -248,7 +248,7 @@ $.fn.addDocumentButton = function(bucket) {
                     '<h3>VClock</h3>' +
                     '<input type="text" name="vclock" />' +
                     '<h3>Body</h3>' +
-                    '<div class="wrapper"><textarea name="body">""</textarea></div>' +
+                    '<div class="wrapper"><textarea name="body">{}</textarea></div>' +
                     '<p class="save"><button class="ok">Save Document</button></p>'
                 );
         $key = $form.find('[name="key"]').parent();
@@ -368,7 +368,7 @@ $.fn.riakHandlers = function(params) {
                     $form.trigger('save-error', ["Document already exists!"]);
                     break;
                 case 'failed':
-                    object = new RiakObject(bucketName, inputs.key, client, body, inputs.mime);
+                    object = new RiakObject(bucketName, inputs.key, client, JSON.stringify(body), inputs.mime);
                     object.store(function(status, object) {
                         switch (status) {
                             case 'ok':
