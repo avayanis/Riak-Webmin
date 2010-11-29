@@ -30,4 +30,11 @@ Limitations
 
 Coming soon
 -----------
+
 * Everything under limitations
+
+Credits
+-------
+
+* MIT Licensed [jsoneditor](https://github.com/iterationlabs/jsoneditor)
+* MIT Licensed [Riaktive](https://github.com/WealthyThinker/Riaktive)
